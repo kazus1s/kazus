@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>нотатка</title>
+  </head>
+  <body>
+    <div class="notes">
+      <div class="note">
+        <h2>Заметка 1</h2>
+        <textarea class="noteTextarea" placeholder="Введите заметку" style="resize: none;"></textarea>
+        <button class="add">Сохранить</button>
+      </div>
+    </div>
+    
+    <div id="savedNotes">
+      <!-- Здесь будут отображаться сохраненные заметки -->
+    </div>
+    
+    <div id="archiveNotes">
+      <!-- Здесь будут отображаться архивированные заметки -->
+    </div>
+    
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Підключення jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Підключення локального скрипта -->
+    <script src="script.js"></script>
+  </body>
+</html>

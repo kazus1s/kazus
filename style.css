@@ -1,0 +1,97 @@
+body {
+  background: rgb(0,134,255);
+  background: linear-gradient(90deg, rgba(0,134,255,1) 0%, rgba(0,223,255,1) 47%, rgba(0,237,255,1) 68%, rgba(0,255,252,1) 85%);
+}
+
+.notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.note {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.noteTextarea {
+  width: calc(100% - 20px);
+  height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #02f6d1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #076ad4;
+}
+
+.error {
+  border-color: #f44336 !important;
+}
+
+/* Стили для контейнера с сохраненными заметками */
+#savedNotes {
+  width: 250px;
+  background-color: #06dbe2b4;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Стили для контейнера с архивированными заметками */
+#archiveNotes {
+  background-color: #0367aa;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+  .notes {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .note {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .noteTextarea {
+    width: calc(100% - 20px);
+    height: 100px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  #savedNotes,
+  #archiveNotes {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
